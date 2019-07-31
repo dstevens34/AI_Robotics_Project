@@ -1,0 +1,12 @@
+file_location = r'C:\Users\Carrot\Documents\GitHub\CS8803\Resources\Inputs\test01.txt'
+
+with open(file_location , 'r') as content_file:
+    content = content_file.read()
+
+content = content.split("\n")
+
+array = []
+
+for val in content:
+    x = val.split(",")
+    array.append([int(x[0]),int(x[1])])

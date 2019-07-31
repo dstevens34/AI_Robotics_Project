@@ -1,0 +1,51 @@
+0-15 points: P​roject Report - The following criteria will be used as a guideline. (Note that up to 2 extra credit points are possible here.)
+○ Teams with the top three reports will each be awarded additional 2 points of extra credit.
+○ Your report should demonstrate an understanding of the problem space and the i​mplementation of your algorithm(s) at a reasonable level of sophistication for a graduate level Computer Science course.
+○ To earn full credit, you must discuss why your chosen algorithm gives the best results and support your argument with detailed, insightful analysis. A picture is worth 1000 words so feel free to use visual aids liberally.
+○ There should be concise but thorough comments describing your program’s functionality in your source code.
+○ For the graders’ sanity, your report should be n​o longer than 15 pages long. There is no minimum length, but make sure to fully document your approach.
+○ Pasting small snippets of your source code into your report to aid discussion is fine, but please do not include superfluous source code in the report PDF.
+
+----
+
+Q: So... what is the default project?
+A: We'll release this information around the time HW5 is due. For now, let's just say that it involves a programming part and a writeup. For the writeup, we're looking for a detailed description of what approaches you took, which ones worked better than others, and most importantly *why* you believe that is. More approaches may not necessarily be better and deeper dives may not necessarily be better, but both seem significantly correlated to strong results and grades.
+
+Q: Is the default project difficult?
+A: At first glance, it looks impossible. That's okay - everyone reacts that way at first. So, don't freak out. Mull it over for a few days. Discuss it with your teammates. Try stuff. Nobody is going to solve the problem perfectly, but that's okay, because you are only graded relative to other teams. You do actually want to solve the problem though; don't just cycle through vanilla, superficial implementations of 2-5 algorithms.
+
+Q: Please tell me more about what you expect to see in the writeup for the default project.
+A: So, the project is going to give you a problem to solve. You'll be assigned to approach it in at least two different ways, write about what you did in those approaches, tell us which approach worked better, and tell us why you think it worked better. What we don't want to see is just "approach A gave an accuracy score of x, and approach B gave an accuracy score of y, so we went with approach B." Rather, we want you to show that you understand why algorithms fail in the specific ways they do, what types of tasks the different algorithms are each best suited for, etc. You should be able to explain when/why to use each algorithm to a family member. On the other hand, also please don't spend time teaching us what a Kalman Filter is - we already know :) We'll assume you know what it is and how to implement it as well - just show us you know when and why to select a particular tool from your toolbox.
+
+Q: Do alternate projects need a writeup?
+A: Yes. Same general spirit as above - tell us what you did, why you did it, what was difficult, and what you learned.
+
+Q: How long should the writeup be?
+A: The writeup must not be longer than 15 pages, simply because we want to be able to get your grades back to you ASAP. If you did the project right, it's likely going to take you 10-15 pages to document everything correctly (including graphs and stuff, which most teams do include).
+
+Q: Can we use Python library xyz?
+A: If you want to use some well-known general Python library like numpy or sklearn, that's fine, as long as you provide us with detailed instructions on how to install whatever libraries you depend upon. If you want to use external libraries, understand that it is your responsibility to help us get it running on our machines; please make this process as simple as possible.
+
+----
+
+- py for 1nn find, kb serialized and loaded
+- paper outlined
+  description of problem space
+  approaches taken and why chosen (algorithms)
+  how judged and why this way
+  descriptions
+  why some worked better than others
+
+  comment my code clearly
+  graph for each approach, prediction vs actual, as adjunct to critique
+  convert to pkl, or upload pkl if okay
+
+
+  - noise
+  - markov assumption
+  - 1nn
+  - 5nn with different features
+  - learnings from AR: most points are not represented! (a larger history might be better)
+    29455 are represented out of ??
+  - nature of the problem
+  - classification vs regression, fine line?

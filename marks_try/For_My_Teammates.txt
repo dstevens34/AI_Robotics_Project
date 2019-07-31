@@ -1,0 +1,45 @@
+4/16/16
+
+This is a KNN (1NN) approach to solving the hexbug prediction problem.
+
+How It Works
+
+The training_data.txt file is converted (pre-grading) into a knowledge base file. This file contains
+a matrix, in which each row contains x and y values for 80 sequential steps, for every possible sequence
+of 80 steps in the training data. When a test file is read, only its last 20 steps are captured. These
+are compared with the first 20 steps in every row of the knowledge base, and the row with the minimum
+Euclidian distance to the example is chosen. A prediction is simply the next 60 x and y values in this
+chosen row of the knowledge base.
+
+
+On Speed
+
+I used csv to create the knowledge base. Because our program is run from scratch for every test file
+by the grader, the knowledge base must be loaded each time. This took about three seconds on my system.
+By converting the csv file to a Python serialized object file (pickle), the time is knocked down to
+about one second for loading. Unfortunately, the pickle file is large, too large to be allowed on the
+github site, so I've added a convert_kb_to_pickle.py program to change the csv file to pkl. This has
+to be done before my program can be run, but after this, the program runs well within the time alloted.
+
+On Testing
+
+We are given only 10 test files. My program scores a 578 with these. However, if the tests are divided
+into a test half and a cross-validation half, the results show that 578 is an optimistic score. To get
+a better idea of how scores would really average out over a lot of realistic cases, I created two more
+sets of tests (and an altered grader to read them.) For 20 and 90 tests, the scores are consistently
+much closer to 900 (870 and 943 respectively).
+
+Your Code
+
+If you want to do more than 10 tests, you can use my tests and grader without changing your own code
+at all. Use the "inputs" and "actual" directories from my code area (a set for each case of 10, 20,
+and 90), and use the grader_ext.py program I made, which is just an edit to the grader to allow the
+extra test cases.
+
+On the Number of Steps Used for Prediction
+
+I used 20 for now, but it is very easy to change this. I actually tested every value from 2 to 140,
+and it was surprising to me that the value didn't make a huge difference. I have graphs and records
+of these in case they might seem of interest in a writeup. 20 looks close to the best number, but it
+is not super clear because many different numbers give similar scores, and cross-validation shows
+that these numbers can vary a lot.

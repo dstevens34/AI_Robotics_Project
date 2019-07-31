@@ -1,0 +1,11 @@
+3/16/16
+
+Correction following 3/15/16 group meeting - maxes and mins:
+
+  x min = 65
+  x max = 564
+  y min = 31
+  y max = 330
+
+These are maxes and mins from all test files and training data.
+y max is slightly higher after test files included (y max was 327 for training data alone).  mw
